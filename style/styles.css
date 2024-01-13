@@ -101,7 +101,7 @@ body {
 .sponsors-logo {
     width: 100%;
     max-width: 1110px;
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 35px 0;
     margin: 0 auto;
@@ -130,15 +130,39 @@ body {
     gap: 80px;
   }
   .sponsors-logo{
-    grid-template-rows: repeat(2, 1fr);
+
     grid-template-columns: repeat(4, 1fr);
     gap: 20px 0;
     justify-items: center;
   }
-  .sponsors-logo img{
-    object-fit: cover;
+  .sponsors-logo1{
+
   }
+  .sponsors-logo2{
+
+  }
+  .sponsors-logo3{
+
+  }
+  .sponsors-logo4{
+
+  }
+  .sponsors-logo5{
+
+  }
+  .sponsors-logo6{
+
+  }
+  .sponsors-logo7{
+
+  }
+
+
 }
+
+
+
+
 
 /* Medium Device */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
