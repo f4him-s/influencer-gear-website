@@ -25,12 +25,12 @@ body {
   color: #fff;
   padding: 10px 24px;
   border: none;
-  transition: .5s;
+  transition: 0.5s;
 }
-.btn-common:hover{
-    background-color: var(--Dark-Color);
-    color: var(--color-btn);
-    box-shadow: 0px 0px 20px 0px rgba(224,44,109,1);
+.btn-common:hover {
+  background-color: var(--Dark-Color);
+  color: var(--color-btn);
+  box-shadow: 0px 0px 20px 0px rgba(224, 44, 109, 1);
 }
 
 .btn-common .arrow {
@@ -83,6 +83,7 @@ body {
   background: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-position: right center;
+  margin-bottom:40px ;
 }
 .hero-title {
   color: var(--color-black);
@@ -97,6 +98,18 @@ body {
 .btn-hero {
   border-radius: 2.5rem;
 }
+.sponsors-logo {
+    width: 100%;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 35px 0;
+    margin: 0 auto;
+}
+
+
+
+
 
 /* Mobile Device */
 @media only screen and (max-width: 576px) {
@@ -109,6 +122,21 @@ body {
   }
   .menu li {
     padding: 5px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    background-position: top center;
+    text-align: center;
+    gap: 80px;
+  }
+  .sponsors-logo{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 0;
+    justify-items: center;
+  }
+  .sponsors-logo img{
+    object-fit: cover;
   }
 }
 
@@ -124,11 +152,30 @@ body {
   .menu li {
     padding: 10px;
   }
+  .hero {
+    flex-direction: column-reverse;
+    background-position: top center;
+    text-align: center;
+    gap: 80px;
+  }
+  .hero-description {
+    padding: 0 50px;
+    text-align: center;
+  }
 }
 
 /* Tablets  */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   body {
     padding: 0 20px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    background-position: top center;
+    text-align: center;
+    gap: 80px;
+  }
+  .hero-description {
+    padding: 0 50px;
   }
 }
