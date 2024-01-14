@@ -14,10 +14,14 @@
   --color-btn: #e02c6d;
   --color-white: #fff;
 }
-
+header{
+    width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 .color-white{
